@@ -73,6 +73,20 @@ V<sub>ds</sub>=1.7447
 gain=-17db(from AC analysis)
 
 Q point is (0.552,55.52uA)
+## Inference:
+1. Current is directly Propotional to the Width of the Mosfet and the current varies with the change in width.
+
+2. Mosfet saturation ensures the mosfet works as an amplifier and produces the desired negative gain as per the equation Av=-gm*Rd.
+
+3. Q point stability is attained in saturation region thus helping in attaining linear amplification .
+
+4. The Mosfet gain is increased in mid band frequency range (small signal analysis).
+
+5. The Transient analysis reveleas the response of the circuit to time domain ssignal and determines how quickly the circuit responds to variation.\
+This is essential in high speed applications.
+
+6.AC Analysis helps in designing circuits with desired gain and helps in impedance matching.\
+Also helps in understanding the frequency response and small signal behaviour of the circuit.
 
 
 
