@@ -1,4 +1,4 @@
-# LIC-1
+
 # Experiment-1
 ## Aim:
 To do the DC analysis,Transient and AC analysis of a CS amplifier circuit and 
@@ -91,9 +91,70 @@ Also helps in understanding the frequency response and small signal behaviour of
 
 
 ### EXPERIMENT 2
+Theory :
+A Diode connected mosfet transistor always is in saturation and acts as a constant current source and acts as a amplifier. The different type of analysis are DC Analysis, AC Analysis and Transient analysis. The drain current obtained is given by the formula
+Id = 1/2 kn Vov2 ; Vov=Vgs-Vth and kn=un Cox W/L
 
+DC Analysis:
+This is done ensure the mosfet operates in saturation and to calculate the DC operationg point of the transistor. This prevents signal distortion .
+This helps in the determination of the biasing resistors.
+This helps in getting a correct operating point despite the fluctuation in the other parameters.
 
+Transient Analysis:
+This to done to analyse the response of the circuit to time varying signals.
 
+This is helpful to determine the signl distorton, DC shift between the input and the output. This plays key role in detecting issues like phase distortion.This is essential for high speed applications like communication systems.
 
+AC Analysis:
+This is nothing but the small signal analysis of the circuit.This is done to determine the Gain of the amplifier circuit .
+Procedure:
+1.Create a new folder and name it as project file.Save the LT spice file in this folder.
 
+2.Name the mosfet as CMOSN and the length as 180nm and width as 3um initially.
+
+3.For the pmos name it as CMOSP and set the length as 180nm and width as 3um respectively
+
+4.DC Analysis: Set up the circuit as per the circuit diagram with proper connections ensuring valid circuit for further analysis. Apply the DC voltage of Vdd=1.8V and Vgs = 0.9 V . Go to simulate option in the tab and edit simulation command, click on DC analysis and press ok.(.op) Click on Run in the tab menu to get the DC operating point ,Vout and Id.
+
+5.Transient Analysis: Apply a sine wave input of Vgs=0.9V with an amplitude of 50mV and frequency of 1kHz by going to advanced menu in the voltage setting option.go to simulate option in tab ,edit simulation command , click on transient analysis and give the stop time as 3m and click ok.(.tran 3m) Now Run to visualise the response of the circuit to a time varying signal.
+
+6.AC Analysis: Go to spice directive and give the library file path for the simulator to access the data through the path . Go to simulate option in the tab , edit simulation command , click on AC analysis and mention the time of sweep as decade , no of points as 20 and frequency as .1Hz to 1THzand click on ok.Now Run to analyze the gain and frequency response of the circuit.(.ac dec 20 .1 1T).
+## CIRCUIT DIAGRAM
+![Screenshot 2025-02-18 002624](https://github.com/user-attachments/assets/ddf0ae8c-9bfb-4c8d-9700-47f0a94edd35)
+## Calculation:
+Power = 100mW
+
+P = V*I ; ( V= 1.8 V)
+That implies Id = 55.56uA
+
+V out/sub> = 1.658 V
+
+Length= 180nm
+
+Width=0.88um
+
+Vds = Vout =1.66
+
+## RESULT
+DC NANLYSIS
+![Screenshot 2025-02-18 003034](https://github.com/user-attachments/assets/f6525c17-5f4d-4ee0-b8e9-9522cb0ee9a3)
+
+AC ANALYSIS
+![Screenshot 2025-02-18 003137](https://github.com/user-attachments/assets/9f7209af-f0f1-44b4-928e-3fdc956c1d6a)
+
+TRANSIENT ANALYSIS
+![Screenshot 2025-02-18 002742](https://github.com/user-attachments/assets/731bf84d-055a-417b-b281-4886e03da0b1)
+
+Inference:
+1.The Current Id is dependent on width and hence it changes when the width changes whereas the remaining parameters remain constany.
+
+2.DC Analysis ensures proper biasing and hence the mosfet operates in saturation and Q point stability is attained.
+
+3.The Transient analysis reveleas the response of the circuit to time domain ssignal and determines how quickly the circuit responds to variation.
+This is essential in high speed applications.
+
+4.AC Analysis helps in designing circuits with desired gain and helps in impedance matching.
+Also helps in understanding the frequency response and small signal behaviour of the circuit.
+
+5.Together all the analysis helps in designing and opyimising an amplifier.
 
