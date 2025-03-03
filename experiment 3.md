@@ -37,7 +37,7 @@ V<sub>OV</sub> = V<sub>GS</sub> - V<sub>th</sub> = 1.15 V - 0.366 V = 0.784 V <b
 ### **DC Analysis**
 
 To set the operating point go to Configure Analysis and select Dc operating Point <br>
-![Screenshot 2025-03-03 121727](https://github.com/user-attachments/assets/34aefdaf-0d53-4482-95f4-bd01e15007e4)
+![image](https://github.com/user-attachments/assets/9b6c550b-3b72-412f-950c-d6d40e0af507)
 
 
 to set correct operating point vary width and length values 
