@@ -25,8 +25,7 @@ The circuit rejects common-mode signals (same voltage at both inputs) and only a
 ![ci](https://github.com/user-attachments/assets/fcbc06b1-b816-4f9f-a97c-0958f0cc0b90)
 
 **Step 1:Dc analysis design Rd and Rss**
-C:\Users\laksh\OneDrive\Pictures\Screenshots 1\Screenshot 2025-03-03 121648.png
-
+![Screenshot 2025-03-03 121727](https://github.com/user-attachments/assets/bdc8aa10-03fe-4fa1-bddd-275d72400b8c)
 
 from the calculation we have finded I<sub>SS</sub>value as 0.909 mA <br>
 I<sub>D1</sub> and I<sub>D2</sub> as 0.45 mA <br>
@@ -38,8 +37,8 @@ V<sub>OV</sub> = V<sub>GS</sub> - V<sub>th</sub> = 1.15 V - 0.366 V = 0.784 V <b
 ### **DC Analysis**
 
 To set the operating point go to Configure Analysis and select Dc operating Point <br>
+![Screenshot 2025-03-03 121727](https://github.com/user-attachments/assets/34aefdaf-0d53-4482-95f4-bd01e15007e4)
 
-![dc2](https://github.com/user-attachments/assets/f76e42bb-74e2-496f-b76f-efc2412a4067)
 
 to set correct operating point vary width and length values 
 width = 208 u <br>
@@ -61,12 +60,13 @@ As the common-mode input voltage \( VICM \) increases, the source voltage \( VP 
 
 ### **Calculate Gain**
 
-![image](https://github.com/user-attachments/assets/fd9ae479-071b-4594-b645-595a6984d270)
+![Screenshot 2025-03-03 121711](https://github.com/user-attachments/assets/c9d807b0-bf3f-44f3-937b-273f2b52a815)
+
 
 
 ### **Calculate maximum input and output Swing**
 
-![image](https://github.com/user-attachments/assets/f7a39423-0de0-439c-b98a-217d4620e004)
+
 
 
 ### **TRANSIENT ANALYSIS**
